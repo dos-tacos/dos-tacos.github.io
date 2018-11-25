@@ -8,6 +8,7 @@ categories:
 tags:
   - test
   - update
+author: Lynn Hong
 ---
 
 The first blog post.
