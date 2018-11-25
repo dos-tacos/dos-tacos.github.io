@@ -1,11 +1,4 @@
 <!--
-  Thanks for creating a Pull Request! Before you submit, please make sure
-  you've done the following:
-
-  - Read the contributing document at https://github.com/mmistakes/minimal-mistakes#contributing
--->
-
-<!--
   Choose one of the following by uncommenting it:
 -->
 

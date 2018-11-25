@@ -3,10 +3,6 @@ name: "Enhancement / Feature Request"
 about: "What would make this theme better?"
 ---
 
-<!--
-  Before opening a new issue please search all issues at 
-  https://github.com/mmistakes/minimal-mistakes/issues to avoid duplication.
--->
 
 ## Summary
 
