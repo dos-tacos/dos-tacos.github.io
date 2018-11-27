@@ -3,7 +3,6 @@
 Lynn Hong:
   name        : "Lynn Hong"
   #uri         : "http://thewhip.com"
-  email       : "lynnn.hong@gmail.com"
   bio         : "Instead of looking at things, look between things."
   avatar      : "/images/common/hong_su_lyn.jpg"
   links:
@@ -19,8 +18,15 @@ Lynn Hong:
 
 syleeie:
   name        : "syleeie"
-  #email       : "cornelius@thewhip.com"
   bio         : "Taco는 맛있어"
   avatar      : "/images/bio-photo.jpg"
-  #twitter     : "rhymeswithsackit"
-  #google_plus : "CorneliusFiddlebone"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:syleeie@gmail.com"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://thewhip.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://web.facebook.com/syleeie"
