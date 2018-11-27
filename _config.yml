@@ -23,7 +23,7 @@ description              : "Delicious taco, savory machine learning!"
 url                      : "https://dos-tacos.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "dos-tacos/dos-tacos.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/images/tacos-neon.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "images/common/tacos-neon.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name             : "공부하는 타코들"
-  avatar           : # path of avatar image, e.g. "/images/bio-photo.jpg"
+  avatar           : "/images/common/tacos-neon.jpg"  # path of avatar image, e.g. "/images/bio-photo.jpg"
   bio              : "I am an amazing person."
   location         : "Seoul, Korea"
   email            :
