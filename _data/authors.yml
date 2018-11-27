@@ -4,10 +4,18 @@ Lynn Hong:
   name        : "Lynn Hong"
   #uri         : "http://thewhip.com"
   email       : "lynnn.hong@gmail.com"
-  bio         : "Hello, world!"
-  avatar      : "/images/bio-photo-2.jpg"
-  #twitter     : "extravagantman"
-  #google_plus : "BillyRick"
+  bio         : "Instead of looking at things, look between things."
+  avatar      : "/images/common/hong_su_lyn.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lynnn.hong@gmail.com"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://thewhip.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://web.facebook.com/sulynhong"
 
 syleeie:
   name        : "syleeie"
