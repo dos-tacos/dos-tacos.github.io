@@ -1,6 +1,9 @@
 # Guideline for 'Delicious tacos, Savory machine learning'
 - 블로그 url: https://dos-tacos.github.io/
 - 이하의 설명들은 `$HOME = dos-tacos.github.io의 root 위치`를 전제로 함
+- 본 블로그는 Jekyll의 [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/) 테마를 사용
+- 공식 문서 [Quick start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+
 
 ## Posts
 ### 기본 작성 요령
@@ -76,4 +79,11 @@ Lynn Hong:
   - label: 아이콘 옆에 나오는 해당 링크의 메뉴명
   - icon: 아이콘 font. [font awesome](https://fontawesome.com/icons)에서 검색하여 사용
   - url: 연결하고 싶은 url
+- [theme official document(authors)](https://mmistakes.github.io/minimal-mistakes/docs/authors/)
 
+
+## Blog update
+- 일단은 담당자가 @lynn-hong 입니다
+- 현재 branch를 `master`만 만들어 두었으므로 위에 적은 폴더나 문서 외에 수정하면 충돌이 발생할 수 있습니다
+- 업데이트는 지속적으로 하고 있으니 **원하는 기능이나 버그 있을 경우 issue에 남겨주세요**
+- 직접 수정하고 싶을 경우 branch 하나 파서 수정 후 `master`로 pull request 보내주세요~
