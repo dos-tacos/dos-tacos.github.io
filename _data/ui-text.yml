@@ -513,7 +513,7 @@ ko: &DEFAULT_KO
   menu_label                 : "토글 메뉴"
   toc_label                  : "On This Page"
   ext_link_label             : "직접 링크"
-  less_than                  : "최대"
+  less_than                  : "읽는 데 최대"
   minute_read                : "분 소요"
   share_on_label             : "공유하기"
   meta_label                 :
@@ -1125,7 +1125,7 @@ ro: &DEFAULT_RO
   back_to_top                : "Înapoi în susul paginii"
 ro-RO:
   <<: *DEFAULT_RO
-  
+
 # Punjabi
 # -----------------
 pa: &DEFAULT_PA
@@ -1170,7 +1170,7 @@ pa: &DEFAULT_PA
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
-  <<: *DEFAULT_PA  
+  <<: *DEFAULT_PA
 # Another locale
 # --------------
 #
