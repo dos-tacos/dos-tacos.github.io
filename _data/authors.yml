@@ -30,3 +30,18 @@ syleeie:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://web.facebook.com/syleeie"
+     
+mason seo:
+  name        : "mason"
+  bio         : "Always keep great ambition in one's mind"
+  avatar      : "/images/seo_beom_seok.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:beomseok822@gmail.com"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://thewhip.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://web.facebook.com/bamsuck"
