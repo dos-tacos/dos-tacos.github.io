@@ -18,8 +18,8 @@ Lynn Hong:
 
 syleeie:
   name        : "syleeie"
-  bio         : "Taco는 맛있어"
-  avatar      : "/images/bio-photo.jpg"
+  bio         : "Taco는 맛있어 (캐글뽀개기는 재밌어)"
+  avatar      : "/images/syleeie.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
