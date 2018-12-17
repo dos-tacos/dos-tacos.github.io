@@ -8,7 +8,7 @@ tags:
   - Stock Market
   - NLP
   - Time Series
-author: seo_beom_seok
+author: mason
 ---
 
 Financial news predicts stock market volatility better than close price
