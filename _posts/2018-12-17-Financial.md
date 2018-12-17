@@ -7,7 +7,7 @@ tags:
   - Stock Market
   - NLP
   - Time Series
-author: mason
+author: mason seo
 
 toc: true
 toc_label: "목차"
