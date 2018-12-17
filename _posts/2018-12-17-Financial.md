@@ -9,6 +9,10 @@ tags:
   - NLP
   - Time Series
 author: mason
+
+toc: true
+toc_label: "목차"
+toc_icon: "cog"
 ---
 
 Financial news predicts stock market volatility better than close price
