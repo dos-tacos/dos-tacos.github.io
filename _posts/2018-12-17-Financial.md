@@ -1,4 +1,3 @@
-
 ---
 layout: single
 title:  "Financial news predicts stock market volatility better than close price review (KR)"
