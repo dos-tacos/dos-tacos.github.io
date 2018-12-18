@@ -1,28 +1,21 @@
 ---
-name: "Enhancement / Feature Request"
-about: "What would make this theme better?"
+name: "기능 요청 (Enhancement/Feature Request)"
+about: "더 좋은 블로그를 만들기 위해 필요한 기능을 요청해주세요"
 ---
 
 
 ## Summary
-
 <!--
-  A short explanation of the enhancement or feature.
+  발전이나 기능 추가에 대한 대략적인 설명을 해 주세요
 -->
 
-## Motivation
-
+## Todo
 <!--
-  Why do you want to see this feature in the theme?
-  What use cases does it support?
-
-  NOTE: This theme has been designed as a base for you to customize and fit 
-  your site's unique needs. If a feature is not something most people will use, 
-  it likely won't be considered. When in doubt ask.
+  해당 기능을 완성하기 위해 필요한 하위 task list가 있으면 남겨주세요
+  이 때, 체크박스로 작성해주시면 더 좋습니다
 -->
 
-## Drawbacks
-
+## Importance
 <!--
-  Why should this enhancement or feature **not** be considered?
+  요청 사항의 시급성에 대해 알려주세요
 -->

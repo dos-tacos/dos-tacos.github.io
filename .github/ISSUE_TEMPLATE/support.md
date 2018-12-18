@@ -1,5 +1,5 @@
 ---
-name: "Question"
-about: "Having trouble working with the theme?"
+name: "질문 (Question)"
+about: "블로그에 대한 기타 다양한 문의사항을 자유롭게 남겨주세요"
 ---
 
