@@ -291,3 +291,7 @@ defaults:
       comments: true
       share: true
       related: true
+
+markdown: kramdown
+kramdown:
+  parse_block_html: true
