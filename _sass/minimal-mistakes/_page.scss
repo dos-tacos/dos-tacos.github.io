@@ -75,7 +75,7 @@
   p,
   li,
   dl {
-    font-size: $type-size-6;   /* lynn custom (originally 1em) */
+    font-size: 1em;
   }
 
   /* paragraph indents */
@@ -121,12 +121,6 @@
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
-  }
-}
-  /* lynn custom */
-.sidebar__right {
-  li {
-    font-size: $type-size-5;
   }
 }
 
