@@ -34,7 +34,7 @@ syleeie:
 mason seo:
   name        : "mason"
   bio         : "Always keep great ambition in one's mind"
-  avatar      : "/images/mason.jpg"
+  avatar      : "/images/common/mason.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
