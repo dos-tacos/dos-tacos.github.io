@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Blog of studying tacos!"
+title                    : "Tasty taco, Savory machine learning"
 title_separator          : "|"
 name                     : "Dos tacos"
-description              : "Delicious taco, savory machine learning!"
+description              : "Tasty taco, Savory machine learning"
 url                      : "https://dos-tacos.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "dos-tacos/dos-tacos.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "images/common/tacos-neon.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "images/home/unsplash_macbook.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -103,8 +103,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "공부하는 타코들"
-  avatar           : "/images/common/tacos-neon.jpg"  # path of avatar image, e.g. "/images/bio-photo.jpg"
+  name             : "공부하는 청년들"
+  avatar           : "/images/home/unsplash_robot.jpg"  # path of avatar image, e.g. "/images/bio-photo.jpg"
   bio              : "I am an amazing person."
   location         : "Seoul, Korea"
   email            :
