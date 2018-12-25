@@ -8,9 +8,10 @@ html {
   min-height: 100%;
 }
 
+/* lynn custom: https://github.com/mmistakes/minimal-mistakes/issues/490 */
 body {
   margin: 0;
-  padding: 0;
+  padding: 65px 0 0;  // padding-top equal to masthead height or greater
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
