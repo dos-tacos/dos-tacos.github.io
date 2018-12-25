@@ -61,89 +61,7 @@ toc_icon: "cog"
 ### 2.3 Volatility estimation
 
  * 변동성은 각 구간에 대한 로그 수익률의 분산으로 추정되었으며 , 1시간마다 변경되었습니다. 
- <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow is="true">
-    <msub is="true">
-      <mi is="true">r</mi>
-      <mi is="true">i</mi>
-    </msub>
-    <mo is="true">=</mo>
-    <mtext is="true">log</mtext>
-    <mrow is="true">
-      <mo is="true">(</mo>
-      <mrow is="true">
-        <mfrac is="true">
-          <mrow is="true">
-            <msub is="true">
-              <mi is="true">S</mi>
-              <mi is="true">i</mi>
-            </msub>
-          </mrow>
-          <mrow is="true">
-            <msub is="true">
-              <mi is="true">S</mi>
-              <mrow is="true">
-                <mi is="true">i</mi>
-                <mo is="true">&#x2212;</mo>
-                <mn is="true">1</mn>
-              </mrow>
-            </msub>
-          </mrow>
-        </mfrac>
-      </mrow>
-      <mo is="true">)</mo>
-    </mrow>
-  </mrow>
-</math>
-
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow is="true">
-    <msup is="true">
-      <mi is="true">&#x3C3;</mi>
-      <mn is="true">2</mn>
-    </msup>
-    <mo is="true">=</mo>
-    <mfrac is="true">
-      <mn is="true">1</mn>
-      <mi is="true">N</mi>
-    </mfrac>
-    <munderover is="true">
-      <mo is="true">&#x2211;</mo>
-      <mrow is="true">
-        <mi is="true">i</mi>
-        <mo is="true">=</mo>
-        <mn is="true">1</mn>
-      </mrow>
-      <mi is="true">N</mi>
-    </munderover>
-    <mrow is="true">
-      <msup is="true">
-        <mrow is="true">
-          <mrow is="true">
-            <mo is="true">(</mo>
-            <mrow is="true">
-              <msub is="true">
-                <mi is="true">r</mi>
-                <mi is="true">i</mi>
-              </msub>
-              <mo is="true">&#x2212;</mo>
-              <mrow is="true">
-                <mover accent="true" is="true">
-                  <mi is="true">r</mi>
-                  <mo is="true">&#xAF;</mo>
-                </mover>
-              </mrow>
-            </mrow>
-            <mo is="true">)</mo>
-          </mrow>
-        </mrow>
-        <mn is="true">2</mn>
-      </msup>
-    </mrow>
-    <mtext is="true">,</mtext>
-  </mrow>
-</math>
- 
+  ![](/images/mason/2018-12-17/picture_1.png)
  *  Si는 i 시점에서의 총 자산 , ri는 i 시점에서의 로그수익률
 
 
@@ -191,26 +109,8 @@ LDA는 문서를 효과적으로 줄이고 이해할 수 있는 주제를 만들
  * 이러한 가정을 적용하기 위해 감쇠함수를 구현하였고 60분의 뉴스를 6개의 간격으로 나누었고, 
  이어 각 간격에 걸쳐 감소하는 방식으로 가중치를 산정하였습니다.
 
- <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow is="true">
-    <msub is="true">
-      <mi is="true">w</mi>
-      <mi is="true">i</mi>
-    </msub>
-    <mo is="true">=</mo>
-    <msub is="true">
-      <mi is="true">w</mi>
-      <mrow is="true">
-        <mi is="true">i</mi>
-        <mo is="true">&#x2212;</mo>
-        <mn is="true">1</mn>
-      </mrow>
-    </msub>
-    <mo is="true">&#x2212;</mo>
-    <mn is="true">0.15</mn>
-    <mtext is="true">,</mtext>
-  </mrow>
-</math>
+![](/images/mason/2018-12-17/picture_2.png)
+
 * i=0인 경우는 예측 기간에 가까운 지점 i = 5 인 경우는 예측 시점에서 가장 먼 지점에 있는 경우
 * 가중치는 간격에 걸쳐 주제의 수에 가중치 w를 곱하여 주제모델에 적용하였고 [ad-hoc testing](http://softwaretestingfundamentals.com/ad-hoc-testing/)을 통해 개선되는것을 확인했습니다.
  
@@ -260,6 +160,19 @@ LDA는 문서를 효과적으로 줄이고 이해할 수 있는 주제를 만들
  * 분류 성능을 정량화하기 위해 accuracy, recall, precision, F1 score , Matthews correlation coefficient와 같은 정보검색에서 많이 쓰이는 여러가지 방법을 사용했습니다.
  * 시장 데이터에서 움직임이 매우 불균형을 일으킬 수 있기 때문에 성능측정항목으로 다양한 측정 값을 사용합니다.
  
+ ![](/images/mason/2018-12-17/picture_3.png)
+ 
 ## 6. Results
 
- * 
+ * Model N : 뉴스데이터를 기반으로 생성한 모델
+ * Model TA : 주식시장의 시계열데이터를 기반으로 생성한 모델
+ 
+ * Model N을 F1평가를 이용해 측정해본 결과 변동성 변화에 대한 예측은 직접적인 시장 가격 예측보다 훨씬 나은 성능을 보여주었습니다.
+ * Model N의 모든 테스트구간에서의 정확도는 변동성 :  55.6% , 종가 : 49.4% 입니다.
+ 
+ ## 7. Conclusiion and discussion
+ 
+ * 해당 논문에서의 텍스트 뉴스 소스에서 추출한 정보를 시장 변동성의 방향성 변화를 예측하는 데 사용할 수 있다는 결과를 확인했습니다.
+ 
+ * 생성도니 모델의 결과는 뉴스 출처에서 파생 된 정보에만 근거하고 다른 입력은 사용되지 않는 점에 유의해야합니다. 따라서 정확도 결과는 시계열을 기반으로 예측하는 모델과 직접 비교하기는 어렵지만 뉴스에서 추출한 정보만으로 시장변동성의 이동방향을 예측할만큼 강력한 신호 수준을 포함하고 있다는 것은 눈여겨 볼 필요가 있습니다.
+ 
