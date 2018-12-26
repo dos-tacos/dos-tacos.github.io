@@ -1,7 +1,11 @@
 # main links
 main:
   - title: "About"
-    url: https://dos-tacos.github.io/about/who-are-we/
+    url: /about/who-are-we/
+  - title: "카테고리별 보기"
+    url: /categories/
+  - title: "태그별 보기"
+    url: /tags/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
