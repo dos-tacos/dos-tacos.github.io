@@ -24,7 +24,7 @@ url                      : "https://dos-tacos.github.io"  # the base hostname & 
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "dos-tacos/dos-tacos.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "images/home/unsplash_macbook.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "facebook"  # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
