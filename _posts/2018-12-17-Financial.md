@@ -1,6 +1,12 @@
 ---
 layout: single
 title:  "Financial news predicts stock market volatility better than close price review (KR)"
+header:
+  teaser: "images/mason/2018-12-17/img.jpeg"
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: images/mason/2018-12-17/img2.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories: 
   - Paper Review
 tags:
@@ -60,9 +66,11 @@ toc_icon: "cog"
 
 ### 2.3 Volatility estimation
 
- * 변동성은 각 구간에 대한 로그 수익률의 분산으로 추정되었으며 , 1시간마다 변경되었습니다. 
-  ![](/images/mason/2018-12-17/picture_1.png)
- *  Si는 i 시점에서의 총 자산 , ri는 i 시점에서의 로그수익률
+* 변동성은 각 구간에 대한 로그 수익률의 분산으로 추정되었으며 , 1시간마다 변경되었습니다. 
+
+<img src="/images/mason/2018-12-17/picture_1.png" width="200px">
+
+*  Si는 i 시점에서의 총 자산 , ri는 i 시점에서의 로그수익률
 
 
 ### 2.4 Machine learning
