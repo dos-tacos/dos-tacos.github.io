@@ -231,6 +231,7 @@ transduction 또는 transductive learning은 통계 학습 이론 분야에서 �
 # 3. An Analysis of Graph Cut Size for Transductive Learning
 
 - 원문: [An Analysis of Graph Cut Size for Transductive Learning(2010-04)](https://www.slideshare.net/butest/an-analysis-of-graph-cut-size-for-transductive-learning)
+- 본 자료는 슬라이드 강의안입니다(부분 발췌)
 
 <img src="/images/lynn/190130/4.jpg" width="700px;"/>
 
@@ -242,3 +243,8 @@ transduction 또는 transductive learning은 통계 학습 이론 분야에서 �
   - 레이블이 없는 데이터와 관계성을 사용
 - 모델을 생성하지 않기 때문에 transductive learning이라고도 하며, 현재 레이블이 없는 데이터에 즉시 사용할 수 있도록 레이블을 부여함
   - 모델을 학습하고 새로운 예제들을 바로 라벨링할 수 있는 귀납적(inductive) 학습과 대조됨
+
+# 다음 포스트
+
+- 다음으로는 'Graves, Alex. "[Sequence transduction with recurrent neural networks.](https://arxiv.org/pdf/1211.3711.pdf)"
+arXiv preprint arXiv:1211.3711 (2012).'  페이퍼를 리뷰할 예정입니다. 
