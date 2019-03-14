@@ -95,47 +95,50 @@ toc_icon: "cog"
 
 ## 4. Example
 
-1.	초기 클러스터 수단과 클러스터 수가 사전에 알려지지 않았기 때문에 초기에 임의로 선택되는 클러스터링 분석 (예 : K-Means Clustering)은 클러스터의 간결성을 평가, 반복 및 평가하는 데 사용할 수 있습니다. 
+- [1] 초기 클러스터 수단과 클러스터 수가 사전에 알려지지 않았기 때문에 초기에 임의로 선택되는 클러스터링 분석 (예 : K-Means Clustering)은 클러스터의 간결성을 평가, 반복 및 평가하는 데 사용할 수 있습니다. 
   - 클러스터의 최종 집합 (즉, 가장 작고 잘 분리 된 클러스터)으로 진행되는 클러스터 집합을 향상시킴 (Ex. Silhouette Distance)
-2.	네트워크 에지의 초기 가중치가 임의로 (콜드 스타트) 할당되지만, 역전파 (backpropagation)는 모델을 최적의 네트워크 (가장 높은 분류 성능)로 반복하는 데 사용
-3.	TensorFlow은 단순한 신경 네트워크와 동일한 역전파 기법을 사용하지만 Calculation of the weight Adjustments은 딥 네트워크 레이어의 매우 고차원적인 매개변수 공간과 텐서를 사용하는 에지 가중치를 통해 이루어짐
+- [2] 네트워크 에지의 초기 가중치가 임의로 (콜드 스타트) 할당되지만, 역전파 (backpropagation)는 모델을 최적의 네트워크 (가장 높은 분류 성능)로 반복하는 데 사용
+
+- [3] TensorFlow은 단순한 신경 네트워크와 동일한 역전파 기법을 사용하지만 Calculation of the weight Adjustments은 딥 네트워크 레이어의 매우 고차원적인 매개변수 공간과 텐서를 사용하는 에지 가중치를 통해 이루어짐
   - Reverse-mode autodiff (Hands_On_Machine_Learning_with_Scikit_Learn_and_TensorFlow 책 참고할 것)
-4.	최적 곡선을 찾기 위해 모델 곡선에서 편차 제곱의 합을 사용하는 회귀. 선형 회귀 분석에서, 선형 최소 제곱합에서 유도 할 수 있는 닫힌 형태의 솔루션이 있습니다. 
+- [4] 최적 곡선을 찾기 위해 모델 곡선에서 편차 제곱의 합을 사용하는 회귀. 선형 회귀 분석에서, 선형 최소 제곱합에서 유도 할 수 있는 닫힌 형태의 솔루션이 있습니다. 
   - 비선형 회귀에 대한 솔루션은 일반적으로 닫힌 형태의 수학 방정식 집합이 아니지만 편차 제곱의 합을 최소화하는 것은 계속 적용됨 
   - 최적의 곡선을 찾기 위해 반복 워크플로에서 그래디언트 디센트를 사용할 수 있음. K-Means Clustering은 실제로 piecewise regression의 예
-5.	그라디언트 디센트와 힐 클라이밍이 일반적으로 전역 최적 값이 아닌 로컬 최적 값에만 수렴하도록 목표함수에 많은 언덕과 계곡이 있는 genetic algorithms, particle swarm optimization (그라디언트를 계산할 수 없는 경우), evolutionary computing 방법을 사용하여 많은 무작위 (콜드 스타트) 모델을 생성 한 다음 전역 최적을 찾을 때까지 각각을 반복 
+- [5] 그라디언트 디센트와 힐 클라이밍이 일반적으로 전역 최적 값이 아닌 로컬 최적 값에만 수렴하도록 목표함수에 많은 언덕과 계곡이 있는 genetic algorithms, particle swarm optimization (그라디언트를 계산할 수 없는 경우), evolutionary computing 방법을 사용하여 많은 무작위 (콜드 스타트) 모델을 생성 한 다음 전역 최적을 찾을 때까지 각각을 반복 
   - 시간과 자원이 부족한 다음 찾을 수 있는 최상의 것을 선택하십시오. 유전 알고리즘에 대한 샘플 유스 케이스를 보여주는 아래 첨부 된 그래픽을 참조 
   - 유전자 알고리즘은 기계학습 알고리즘이 아니며 실제로는 메타 학습 알고리즘
-6.	kNN (k-Nearest Neighbors)는 데이터 집합 자체가 모델이 되는 지도학습 기법
+- [6] kNN (k-Nearest Neighbors)는 데이터 집합 자체가 모델이 되는 지도학습 기법
   - 즉, 새로운 데이터 포인트를 특정 그룹 (클래스 레이블 또는 특정 의미를 가질 수도 있고 가지지 않을 수도 있음)에 할당하는 것은 기존 데이터 포인트의 어떤 카테고리(그룹)가 대다수인지를 단순히 발견할 때 가장 가까운 이웃들의 투표를 새로운 데이터 포인트로 가져가는 것 
   - 검사 될 가장 가까운 이웃의 수는 임의의 수 k이며, 초기에는 임의적 일 수 있지만 (콜드 스타트), 모델 성능을 향상시키기 위해 조정됨
 
 ![knn](https://www.fromthegenesis.com/wp-content/uploads/2018/09/K_NN_Ad.jpg)
 
-7.	Naive Bayes 분류는 베이지 정리를 데이터 항목에 클래스 라벨이 있는 대용량 데이터 세트에 적용하지만 속성 및 기능의 일부 조합은 훈련 데이터에 표시되지 않음 
+- [7] Naive Bayes 분류는 베이지 정리를 데이터 항목에 클래스 라벨이 있는 대용량 데이터 세트에 적용하지만 속성 및 기능의 일부 조합은 훈련 데이터에 표시되지 않음 
   - 상이한 속성들이 데이터 아이템의 상호 독립적인 특징이라고 가정함으로써, 훈련 데이터에서 발견되지 않는 특징 벡터 (속성들의 세트)를 갖는 새로운 데이터 아이템에 대한 클래스 라벨이 무엇인지에 대한 posterior likelihood를 추정 할 수 있음 
   - 때로 Bayes Belief Network (BBN)라고도 하며 데이터 세트가 모델이 되는 또 다른 예. 여러 속성의 발생 빈도가 속성의 여러 조합의 예상 발생 빈도를 개별적으로 알릴 수 있음
 
 ![](https://image.slidesharecdn.com/bayesianbeliefnetworksfordummies-150204145151-conversion-gate02/95/bayesian-belief-networks-for-dummies-9-638.jpg?cb=1423192905)
 
-8.	마르코프 모델링 (시퀀스에 대한 Belief Networks)은 웹로그, 구매 패턴, 유전자 시퀀스, 음성 샘플, 비디오, 주가 또는 기타 시간적 또는 공간적 또는 매개변수 순서를 포함 할 수 있는 시퀀스에 BBN을 확장 한 것입니다.
+- [8] 마르코프 모델링 (시퀀스에 대한 Belief Networks)은 웹로그, 구매 패턴, 유전자 시퀀스, 음성 샘플, 비디오, 주가 또는 기타 시간적 또는 공간적 또는 매개변수 순서를 포함 할 수 있는 시퀀스에 BBN을 확장 한 것입니다.
 
 ![Markov Modeling](https://www.mathpages.com/home/kmath232/part4/part4_files/image002.gif)
 
-9.	연관 규칙 마이닝 : 데이터 세트의 무작위 샘플링에서 예상보다 높은 동시 발생 연관을 검색
+- [9] 연관규칙 마이닝 : 데이터 세트의 무작위 샘플링에서 예상보다 높은 동시 발생 연관을 검색
+  - 연관 규칙 마이닝은 데이터 세트가 모델이 되는 또 다른 예이며, 연관되어 있는 사전 지식이 알려져 있지 않음 (즉, 콜드 스타트 ​​챌린지)            
+  - 기법은 Market Basket Analysis라고도 하며 간단한 콜드 스타트 ​​고객구매 권장 사항에 사용되었지만 열대성 태풍 (허리케인) 강화 예측과 같은 이국적인 사용 사례에서도 사용되었음
 
 ![](https://www.saedsayad.com/images/AR_1.png)
 ![](https://www.saedsayad.com/images/AR_2.png)
 
-  - 연관 규칙 마이닝은 데이터 세트가 모델이 되는 또 다른 예이며, 연관되어 있는 사전 지식이 알려져 있지 않음 (즉, 콜드 스타트 ​​챌린지). 
-  - 기법은 Market Basket Analysis라고도 하며 간단한 콜드 스타트 ​​고객구매 권장 사항에 사용되었지만 열대성 태풍 (허리케인) 강화 예측과 같은 이국적인 사용 사례에서도 사용되었음
   
-10.	네트워크의 패턴 (e.g., centrality, reach, degrees of separation, density, cliques, etc.)
- - 네트워크 (e.g.,most authoritative or influential nodes in the network) 지식을 인코딩하는 소셜 네트워크 (링크) 분석 패턴 (예 : 콜드 스타트)에 대한 사전 지식없이 PageRank와 같은 알고리즘을 적용
+- [10]네트워크의 패턴 (e.g., centrality, reach, degrees of separation, density, cliques, etc.)
+  - 네트워크 (e.g.,most authoritative or influential nodes in the network) 지식을 인코딩하는 소셜 네트워크 (링크) 분석 패턴 (예 : 콜드 스타트)에 대한 사전 지식없이 PageRank와 같은 알고리즘을 적용
 
-1.	The Cold Start Problem for Recommender Systems (추천 시스템의 콜드 스타트 ​​문제)
-2.	Tackling the Cold Start Problem in Recommender Systems (추천 시스템의 콜드 스타트 ​​문제 해결)
-3.	Approaching the Cold Start Problem in Recommender Systems (추천 시스템에서 콜드 스타트 ​​문제에 접근하기)
+
+- 참고하면 좋은 아티클
+  -	The Cold Start Problem for Recommender Systems (추천 시스템의 콜드 스타트 ​​문제)
+  -	Tackling the Cold Start Problem in Recommender Systems (추천 시스템의 콜드 스타트 ​​문제 해결)
+  -	Approaching the Cold Start Problem in Recommender Systems (추천 시스템에서 콜드 스타트 ​​문제에 접근하기)
 
 <img src="/images/syleeie/2019-03-15/0.png" width="500"> 
 
