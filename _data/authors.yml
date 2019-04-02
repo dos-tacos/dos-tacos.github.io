@@ -50,7 +50,7 @@ mason seo:
 Chisung Song:
   name        : "Chisung Song"
   bio         : "Especially interested in ASR & NLP"
-  avatar      : "/images/common/chisung_song.jpg"
+  avatar      : "/images/common/song_chi_sung.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
