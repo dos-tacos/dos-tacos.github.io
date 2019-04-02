@@ -6,6 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: "images/unsplash-gallery-image-2-th.jpg"
+excerpt: "Speaker Diarization 관련 글입니다." 
 categories: 
   - paper review
 tags:
