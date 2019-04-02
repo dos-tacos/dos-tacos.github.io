@@ -16,7 +16,8 @@ toc: true
 toc_label: "목차"
 toc_icon: "cog"
 
-author: daydrill
+author: Chisung Song
+
 ---
 
 
