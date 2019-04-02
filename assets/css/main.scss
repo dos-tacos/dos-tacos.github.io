@@ -6,3 +6,17 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+h1 {
+  margin-top: 50px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.footnote {
+  padding-left: 3px;
+  color: dodgerblue;
+  font-size: inherit;
+}
