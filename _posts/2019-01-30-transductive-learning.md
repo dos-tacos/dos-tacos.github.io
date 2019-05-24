@@ -6,7 +6,7 @@ header:
   overlay_filter: "0.5"
   overlay_image:  images/lynn/190130/header.png
 excerpt: 다양한 분야에서 쓰이고 있는 'Transduction' 개념이 특히 언어학, 시퀀스 예측 분야에서는 어떻게 사용되는지 알아봅니다.
-title:  "Sequence prediction 분야에서의 Transduction (1)"
+title:  "Sequence prediction (1): transductive learning"
 categories: 
   - Translation
 tags:

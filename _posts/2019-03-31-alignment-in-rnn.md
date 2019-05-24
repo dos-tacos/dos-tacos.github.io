@@ -6,7 +6,7 @@ header:
   overlay_filter: "0.5"
   overlay_image:  images/lynn/190331/header.png
 excerpt: RNN에서 alignment의 의미와 기존 모델의 어려움을 극복하기 위해 제안되었던 Seq2seq 모델에 대해 알아봅니다.
-title:  "RNN에서의 alignment 의미와 seq-to-seq 모델"
+title:  "Sequence prediction(2): RNN에서의 alignment 의미와 seq-to-seq 모델"
 categories: 
   - concept
 tags:
