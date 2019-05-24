@@ -45,3 +45,16 @@ mason seo:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://web.facebook.com/bamsuck"
+
+
+Chisung Song:
+  name        : "Chisung Song"
+  bio         : "Especially interested in ASR & NLP"
+  avatar      : "/images/common/song_chi_sung.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:daydrilling@gmail.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://web.facebook.com/shuraba"

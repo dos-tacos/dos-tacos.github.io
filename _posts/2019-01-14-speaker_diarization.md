@@ -6,6 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: "images/unsplash-gallery-image-2-th.jpg"
+excerpt: "Speaker Diarization 살펴보기 part 1" 
 categories: 
   - paper review
 tags:
@@ -15,7 +16,8 @@ toc: true
 toc_label: "목차"
 toc_icon: "cog"
 
-author: daydrill
+author: Chisung Song
+
 ---
 
 
