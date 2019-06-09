@@ -58,3 +58,16 @@ Chisung Song:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://web.facebook.com/shuraba"
+
+Kay Lee:
+  name        : "Kay Lee"
+  bio         : "Especially interested in digital marketing & advertising"
+  avatar      : "/images/common/kaylee.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mineatte@gmail.com"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/kaylee1015"
+
