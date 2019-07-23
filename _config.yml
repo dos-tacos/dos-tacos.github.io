@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Tasty taco, Savory machine learning"
+title                    : "Dos tacos"
 title_separator          : "|"
 name                     : "Dos tacos"
-description              : "Tasty taco, Savory machine learning"
+description              : ""
 url                      : "https://dos-tacos.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "dos-tacos/dos-tacos.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "images/home/unsplash_macbook.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "assets/img/blog-header.png"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -217,7 +217,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
