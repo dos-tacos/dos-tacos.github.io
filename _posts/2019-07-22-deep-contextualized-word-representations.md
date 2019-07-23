@@ -257,3 +257,6 @@ NER과 SST-5의 시험 크기가 작기 때문에, 우리는 서로 다른 무�
 - 또 ablation 등 제어된 실험을 통해 biLM 계층이 문맥에서 단어에 대한 다양한 유형의 통사적 및 의미적 정보를 효율적으로 인코딩하고 모든 계층을 사용하면 전반적인 작업 성능이 향상된다는 것을 확인
 
 
+# 정리 잘 되어있는 참고 자료
+- [딥 러닝을 이용한 자연어 처리 입문 6. 엘모(Embeddings from Language Model, ELMo)](https://wikidocs.net/33930)
+- [The Land Of Galaxy - 논문 설명 - ELMo : Deep contextualized word representations](http://mlgalaxy.blogspot.com/2018/12/elmo-deep-contextualized-word.html)
